@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blaskovits Group – Publications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+ 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap; 
+      gap: 15px; 
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    main {
+      flex-grow: 1;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      color: #004080;
+    }
+
+    .subtitle {
+      margin: 0 0 25px 0;
+      color: #000000;
+    }
+
+    .resume-link {
+      margin-bottom: 50px;
+    }
+
+    .resume-link a {
+      text-decoration: none;
+      color: #004080;
+      border-bottom: 1px solid transparent;
+    }
+
+    .resume-link a:hover {
+      border-bottom: 1px solid #004080;
+    }
+
+    .year-section {
+      margin-bottom: 45px;
+    }
+
+    .year-heading {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #004080;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .publication-list {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .publication-entry {
+      margin-bottom: 35px;
+    }
+
+  
+    .paper-image {
+      width: 100%;
+      max-width: 220px;
+      display: flex;
+      align-items: flex-end; 
+      justify-content: flex-start; 
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .paper-image img {
+      width: 100%;
+      height: auto;
+      max-height: 140px; 
+      object-fit: contain;
+      background: transparent;
+    }
+
+ 
+    .paper-image:not(:has(img)) {
+      display: none;
+    }
+
+    .paper-title {
+      font-weight: 700;
+      display: block;
+    }
+
+    .paper-authors {
+      font-style: normal;
+      display: block;
+    }
+
+    .paper-links {
+      margin-top: 5px;
+    }
+
+    .paper-links a {
+      color: #004080;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: 500;
+    }
+
+    .paper-links a:hover {
+      text-decoration: underline;
+    }
+
+ 
+    footer {
+      background: #f0f0f0;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; 
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .address {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      height: auto; 
+      background-color: transparent;
+    }
+      
+    .amii {
+      width: 100%;
+      max-width: 108px;
+      height: auto; 
+      background-color: transparent;
+    }
+
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      main {
+        margin: 20px auto;
+      }
+
+      .paper-image {
+        max-width: 100%;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blaskovits Group</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="members.html">Members</a>
+      <a href="publications.html">Publications</a>
+      <a href="join.html">Join</a>
+      <a href="https://github.com/blaskovits-lab/">Github</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Publications</h2>
+      <p class="subtitle">† These authors contributed equally.</p>
+
+      <div class="year-section">
+        <div class="year-heading">Submitted</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <span class="paper-title">[30] From Data to Dimers: Engineering Acene Derivatives for Photovoltaic Singlet Fission.</span>
+            <span class="paper-authors">Cross, A. J.; Tykwinski, R. R.; Blaskovits, J. T. Submitted.</span>
+          </div>
+
+          <div class="publication-entry">
+            <span class="paper-title">[29] Organic Materials of Tomorrow: Current and Future Horizons of Artificial Intelligence.</span>
+            <span class="paper-authors"><u>Mena, H.</u>; Blaskovits, J. T.; Lin, K.-H.; Andrienko, D. Submitted.</span>
+          </div>
+
+          <div class="publication-entry">
+            <span class="paper-title">[28] Synthesis, solubilization, and photophysical properties of polyfluorinated pentacene dimers.</span>
+            <span class="paper-authors">Schroeder, Z. W.; Greißel, P. M.; Wollny, A.-S.; Cross, A.; Chen, L.; Plny, G. F. P.; Muller, V.; Hall, A.; Blaskovits, J. T.; Guldi, D. M.; Tykwinski, R. R. Submitted.</span>
+          </div>
+
+          <div class="publication-entry">
+            <span class="paper-title">[27] Enhancing the operational stability of carbene-metal-amide organic light emitting diodes.</span>
+            <span class="paper-authors">Saxena, R.; Blaskovits, J. T.; Brannan, A. C.; Romanov, A.; Andrienko, D.; Blom, P. W. M.; Wetzelaer, G.-J. A. H. Submitted.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2025</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D5SC03184B&imageInfo.ImageIdentifier.Year=2025" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[26] Generative design of singlet fission materials leveraging a fragment-oriented database.</span>
+            <span class="paper-authors">Worakul, T.; Laplaza, R.; <strong>Blaskovits, J. T.</strong>; Corminboeuf, C. </span>
+            <i>Chemical Science</i>, <strong>2025</strong>, <i>16</i> (38), 17956-17969.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1039/D5SC03184B" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41563-025-02294-8/MediaObjects/41563_2025_2294_Fig1_HTML.png?as=webp" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[25] Efficient and stable pure-blue single-layer organic light-emitting diodes based on trap-free hyperfluorescence.</span>
+            <span class="paper-authors">Sachnik, O.; Kinaret, N.; Saxena, R.; Manz, M.; lieu, W.; <strong>Blaskovits, J. T.</strong>; Andrienko, D.; Michels, J. J.; Blom, P. W. M.; Wetzelaer, G.-J. A. H.</span>
+            <i>Nature Materials</i>, <strong>2025</strong>, <i>24</i>, 1742-1748.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1038/s41563-025-02294-8" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://advanced.onlinelibrary.wiley.com/cms/asset/c705d7f2-576b-40da-8c33-a38f654d1538/aenm202502398-gra-0001-m.jpg" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[24] Discerning Performance Bottlenecks of State-of-the-Art Narrow Bandgap Organic Solar Cells.</span>
+            <span class="paper-authors">Shukla, A.; Pranav, M.; He, G.; <strong>Blaskovits, J. T.</strong>; Mascione, D.; Cao, Y'; Gong, Y'; Riley, D. B.; Steele, J. A.; Solano, E.; Ehm, A'; Shadabroo, M. S.; Armin, A'; Shoaee, S.; Zahn, D. R. T.; Li, Y'; Meng, L.; Lang, F.; Andrienko, D.; Neher, D.</span>
+            <i>Advanced Energy Materials</i>, <strong>2025</strong>, 2502398.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/aenm202502398" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://onlinelibrary.wiley.com/cms/asset/b17d2c3c-2037-42a4-a548-28c2134b986b/anie202415056-toc-0001-m.png" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[23] Inverse Design of Singlet Fission Materials with Uncertainty-Controlled Genetic Optimization.</span>
+            <span class="paper-authors">Schaufelberger, L.; <strong>Blaskovits, J. T.</strong>; Laplaza, R.; Jorner, K.; Corminboeuf, C.</span>
+            <i>Angewandte Chemie</i>, <strong>2025</strong>, <i>137</i> (3), e202415056.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/anie.202415056" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2024</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://advanced.onlinelibrary.wiley.com/cms/asset/c2f8a3dd-b655-45f0-af8d-1589305305f0/adma202305602-fig-0001-m.png" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[22] Data-driven discovery of organic electronic materials enabled by hybrid top-down/bottom-up design.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Laplaza, R.; Vela, S.; Corminboeuf, C.</span>
+            <i>Advanced Materials</i>, <strong>2024</strong>, <i>36</i>, 2305602.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/adma.202305602" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.jpclett.4c02317/asset/images/medium/jz4c02317_0005.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[21] Singlet-triplet inversions in through-bond charge-transfer states.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Corminboeuf, C.; Garner, M. H.</span>
+            <i>Journal of Physical Chemistry Letters</i>, <strong>2024</strong>, <i>15</i>, 10062–10067
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.jpclett.4c02317" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/jacs.4c01890/asset/images/medium/ja4c01890_0008.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[20] Engineering frustrated Lewis pair active sites in metal-organic frameworks for catalytic CO2 hydrogenation.</span>
+            <span class="paper-authors">Das, S.; Laplaza, R.; <strong>Blaskovits, J. T.</strong>; Corminboeuf, C.</span>
+            <i>Journal of the American Chemical Society</i>, <strong>2024</strong>, <i>146</i>, 15806–15814.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/jacs.4c01890" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D3CC05747J&imageInfo.ImageIdentifier.Year=2024" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[19] Enhanced inverted singlet-triplet gaps in azaphenalenes and non-alternant hydrocarbons.</span>
+            <span class="paper-authors">Garner, M. H.†; <strong>Blaskovits, J. T.</strong>†; Corminboeuf, C.</span>
+            <i>Chemical Communications</i>, <strong>2024</strong>, <i>60</i>, 2070-2073.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1039/D3CC05747J" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.jpca.4c06726/asset/images/medium/jp4c06726_0010.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[18] Excited-state Hund’s Rule Violations in Bridged [10]- and [14]Annulene Perimeters.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Corminboeuf, C.; Garner, M. H.</span>
+            <i>Journal of Physical Chemistry A – Special issue: TADF-Active Systems: Mechanism, Applications, and Future Directions</i>, <strong>2024</strong>, <i>128</i>, 10404-10412.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.jpca.4c06726" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2023</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D3SC03409G&imageInfo.ImageIdentifier.Year=2023" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[17] Double-bond delocalization in non-alternant hydrocarbons induces inverted singlet-triplet gaps.</span>
+            <span class="paper-authors">Garner, M. H.†; <strong>Blaskovits, J. T.†</strong>; Corminboeuf, C.</span>
+            <i>Chemical Science</i>, <strong>2023</strong>, <i>14</i>, 10458-10466.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1039/d3sc03409g" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://onlinelibrary.wiley.com/cms/asset/128a60ff-2f4a-4475-b112-7a55ac7e8a94/anie202218156-toc-0001-m.jpg" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[16] Symmetry-induced singlet-triplet inversions in non-alternant hydrocarbons.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.†</strong>; Garner, M. H.†; Corminboeuf, C.</span>
+            <i>Angewandte Chemie</i>, <strong>2023</strong>, <i>135</i> (15), e202218156.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/anie.202218156" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2022</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1CC06755A&imageInfo.ImageIdentifier.Year=2022" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[15] Heteroatom oxidation controls singlet–triplet energy splitting in singlet fission building blocks.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Fumanal, M.; Vela, S.; Cho, Y'; Corminboeuf, C.</span>
+            <i>Chemical Communications</i>, <strong>2022</strong>, <i>58</i> (9), 1338–1341.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1039/d1cc06755a" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://onlinelibrary.wiley.com/cms/asset/47a20902-50b7-4dc0-b8bf-c70b67ca50bb/anie202202727-toc-0001-m.png" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[14] Mapping active site geometry to activity in immobilized frustrated Lewis pair catalysts.</span>
+            <span class="paper-authors">Das, S.; Laplaza, R.; <strong>Blaskovits, J. T.</strong>; Corminboeuf, C.</span>
+            <i>Angewandte Chemie</i>, <strong>2022</strong>, <i>134</i> (32), e202202727.
+            <div class="paper-links">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202202727" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2021</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.jpcc.1c04067/asset/images/medium/jp1c04067_0007.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[13] Is a single conformer sufficient to describe the reorganization energy of amorphous organic transport materials?</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.†</strong>; Lin, K.-H.†; Fabregat, R.; Swiderska, I.; Wu, H.; Corminboeuf, C.</span>
+            <i>Journal of Physical Chemistry C</i>, <strong>2021</strong>, <i>125</i> (31), 17355–17362.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.jpcc.1c04067" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/12732ade-8e0e-44d0-a131-0c4cfa6deb86/chem202101742-toc-0001-m.png" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[12] Tuning the π-accepting properties of mesoionic carbenes: A combined computational and experimental study.</span>
+            <span class="paper-authors">Dong, Z.; <strong>Blaskovits, J. T.</strong>; Fadaei-Tirani, F.; Scopelliti, R.; Sienkiewicz, A.; Corminboeuf, C.; Severin, K.</span>
+            <i>Chemistry – A European Journal</i>, <strong>2021</strong>, <i>27</i> (46), 11983–11988.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/chem.202101742" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.chemmater.1c00057/asset/images/medium/cm1c00057_0007.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[11] Identifying the trade-off between intramolecular singlet fission requirements in donor–acceptor copolymers.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Fumanal, M.; Vela, S.; Fabregat, R.; Corminboeuf, C.</span>
+            <i>Chemistry of Materials</i>, <strong>2021</strong>, <i>33</i> (7), 2567–2575.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.chemmater.1c00057" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2020</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.chemmater.0c01784/asset/images/medium/cm0c01784_0009.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[10] Designing singlet fission candidates from donor–acceptor copolymers.</span>
+            <span class="paper-authors">Blaskovits, J. T.; Fumanal, M.; Vela, S.; Corminboeuf, C.</span>
+            <i>Chemistry of Materials</i>, 2020, <i>32</i> (15), 6515–6524.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.chemmater.0c01784" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2019</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <span class="paper-title">[9] Direct (hetero) arylation polymerization for the preparation of conjugated polymers.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Leclerc, M.</span>
+            In T. A. Skotheim, B. C. Thompson and J. R. Reynolds (Eds.), <i>The handbook of conducting polymers, 4th edition</i>,  (pp. 195–238). CRC Press, <strong>2019</strong>.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1201/b22233" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2018</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.macromol.8b01142/asset/images/medium/ma-2018-01142t_0013.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[8] Mechanistic origin of β-defect formation in thiophene-based polymers prepared by direct (hetero)arylation.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Johnson, P. A.; Leclerc, M.</span>
+            <i>Macromolecules</i>, <strong>2018</strong>, <i>51</i> (20), 8100–8113.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.macromol.8b01142" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://onlinelibrary.wiley.com/cms/asset/ce95d85b-887d-4549-9990-eab7e093e275/marc201800512-gra-0001-m.jpg" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[7] C-H activation as a shortcut to conjugated polymer synthesis.</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.</strong>; Leclerc, M.</span>
+            <i>Macromolecular Rapid Communications</i>, <strong>2018</strong>, <i>40</i> (1), 1800512.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1002/marc.201800512" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.chemmater.8b02862/asset/images/medium/cm-2018-02862v_0007.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[6] Pyromellitic diimide-based copolymers and their application as stable cathode active materials in lithium and sodium-ion batteries.</span>
+            <span class="paper-authors">Zindy, N.; <strong>Blaskovits, J. T.</strong>; Beaumont, C.; Michaud-Valcourt, J.; Saneifar, H.; Johnson, P. A.; Bélanger, D.; Leclerc, M.</span>
+            <i>Chemistry of Materials</i>, <strong>2018</strong>, <i>30</i> (19), 6821–6830.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.chemmater.8b02862" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2017</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1566119917303658-fx1.jpg" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[5] Photovoltaic device performance of highly regioregular fluorinated poly(3-hexylthiophene).</span>
+            <span class="paper-authors">Sun, J.-P.; <strong>Blaskovits, J. T.</strong>; Bura, T.; Beaupré, S.; Leclerc, M.; Hill, I. G.</span>
+            <i>Organic Electronics</i>, <strong>2017</strong>, <i>50</i>, 115–120.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1016/j.orgel.2017.07.033" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C7SC00589J&imageInfo.ImageIdentifier.Year=2017" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[4] Direct heteroarylation polymerization: Guidelines for defect-free conjugated polymers.</span>
+            <span class="paper-authors">Bura, T.; Beaupré, S.; Légaré, M.-A.; Quinn, J.; Rochette, E.; <strong>Blaskovits, J. T.</strong>; Fontaine, F.-G.; Pron, A'; Li, Y'; Leclerc, M.</span>
+            <i>Chemical Science</i>, <strong>2017</strong>, <i>8</i> (5), 3913–3925.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1039/c7sc00589j" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <div class="year-heading">2016</div>
+        <div class="publication-list">
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.macromol.6b02365/asset/images/medium/ma-2016-02365a_0013.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[3] A study of the degree of fluorination in regioregular poly(3-hexylthiophene).</span>
+            <span class="paper-authors"><strong>Blaskovits, J. T.†</strong>; Bura, T.†; Beaupré, S.; Lopez, S. A.; Roy, C.; de Goes Soares, J.; Oh, A'; Quinn, J'; Li, Y; Aspuru-Guzik, A; Leclerc, M.</span>
+            <i>Macromolecules</i>, <strong>2016</strong>, <i>50</i> (1), 162–174.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.macromol.6b02365" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/acs.chemrev.6b00498/asset/images/medium/cr-2016-00498x_0092.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[2] Direct (Hetero)arylation Polymerization: Simplicity for Conjugated Polymer Synthesis.</span>
+            <span class="paper-authors">Pouliot, J.-R.; Grenier, F.; <strong>Blaskovits, J. T.</strong>; Beaupré, S.; Leclerc, M</span>
+            <i>Chemical Reviews</i>, <strong>2016</strong>, <i>116</i> (22), 14225–14274.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/acs.chemrev.6b00498" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+
+          <div class="publication-entry">
+            <div class="paper-image">
+              <img src="https://pubs.acs.org/cms/10.1021/jacs.6b06237/asset/images/medium/ja-2016-06237s_0031.gif" alt="TOC Graphic">
+            </div>
+            <span class="paper-title">[1] Direct (hetero)arylation polymerization: Trends and perspectives.</span>
+            <span class="paper-authors">Bura, T.†; <strong>Blaskovits, J. T.†</strong>; Leclerc, M.</span>
+            <i>Journal of the American Chemical Society</i>, <strong>2016</strong>, <i>138</i> (32), 10056–10071.
+            <div class="paper-links">
+              <a href="https://doi.org/10.1021/jacs.6b06237" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="address">
+      Department of Chemistry<br />
+      University of Alberta<br />
+      W4-70B Chemistry Centre - West<br />
+      11227 Saskatchewan Drive<br />
+      Edmonton, Alberta, Canada T6G 2G2<br />
+    </div>
+
+    <img class="amii" src="pics/amii.png" alt="Amii Logo" />
+    <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+  </footer>
+
+</body>
+</html>

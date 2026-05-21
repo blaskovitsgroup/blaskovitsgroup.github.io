@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Group – Member Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap; 
+      gap: 15px; 
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    
+    main {
+      flex-grow: 1; 
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .profile-photo {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 2;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    .profile-info h3 {
+      margin: 5px 0 20px 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      line-height: 1.6; 
+    }
+
+    .section h4 {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: #004080;
+    }
+
+    .resume-link {
+      margin-top: 15px;
+    }
+
+    .resume-link a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .resume-link a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #004080;
+      font-size: 1.5rem;
+    }
+
+    
+    footer {
+      background: #f0f0f0;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; 
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .address {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      height: auto; 
+      background-color: transparent;
+    }
+      
+    .amii {
+      width: 100%;
+      max-width: 108px;
+      height: auto; 
+      background-color: transparent;
+    }
+
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      
+      main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      
+      .profile-info h2, 
+      .profile-info h3 {
+        text-align: center;
+      }
+        
+      .section p {
+        text-align: left;
+      }
+
+      .resume-link {
+        text-align: center;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Blaskovits Group</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../members.html">Members</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../join.html">Join</a>
+      <a href="https://github.com/blaskovits-lab/">Github</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile-photo">
+      <img src="../pics/terry.jpg" alt="Dr. Terry Blaskovits" />
+    </div>
+
+    <div class="profile-info">
+      <h2>Dr. Terry Blaskovits</h2>
+      <h3>Assistant Professor, Faculty of Science - Chemistry</h3>
+
+      <div class="section">
+        <h4>Biography</h4>
+        <p>J. Terence (Terry) Blaskovits is an assistant professor in the <a href="https://www.ualberta.ca/en/chemistry/index.html" target="_blank">Department of Chemistry</a> at the University of Alberta, a fellow of the Alberta Machine Intelligence Institute (Amii; <a href="https://www.amii.ca/" target="_blank">https://www.amii.ca/</a>) and a CIFAR AI chair. His research is at the intersection of machine learning and computational chemistry. He focuses on the data-driven design of novel molecules and materials for applications in energy, optics, and catalysis. He received a BSc from Université Laval (Québec City) as an inaugural Schulich Leader scholar and an MSc from the same institution as a Schmeelk Canada fellow, working under the supervision of Profs. Mario Leclerc and Paul Johnson. He was awarded an NSERC foreign study fellowship to conduct research for half a year in the group of Prof. Alán Aspuru-Guzik, then at Harvard (Cambridge, USA). He obtained his PhD at the Swiss Federal Institute of Technology (Lausanne) in the group of Prof. Clémence Corminboeuf, where he was awarded best PhD thesis in chemical science and engineering. He was most recently a postdoctoral fellow with Dr. Denis Andrienko at the Max Planck Institute for Polymer Research (Mainz, Germany). Beyond his research activities, he is a passionate educator and classically-trained musician, and has taught music and science at Gandhi Ashram School in rural northern India in 2018-2019.</p>
+        
+        <div class="resume-link">
+	  </br>
+          <a href="../docs/cv_jtb_with_publication_list_2025.pdf" target="_blank">Download Curriculum Vitae (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="address">
+      Department of Chemistry<br />
+      University of Alberta<br />
+      W4-70B Chemistry Centre - West<br />
+      11227 Saskatchewan Drive<br />
+      Edmonton, Alberta, Canada T6G 2G2<br />
+    </div>
+
+    <img class="amii" src="../pics/amii.png" alt="Amii Logo" />
+    <img class="logo" src="../pics/UOA-300x70.png" alt="University of Alberta Logo" />
+  </footer>
+
+</body>

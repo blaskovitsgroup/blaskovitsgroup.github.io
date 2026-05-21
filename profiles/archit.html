@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Group – Member Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap; 
+      gap: 15px; 
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    main {
+      flex-grow: 1; 
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .profile-photo {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 2;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    .profile-info h3 {
+      margin: 5px 0 20px 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      line-height: 1.6; 
+    }
+
+    .section h4 {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: #004080;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #004080;
+      font-size: 1.5rem;
+    }
+
+
+    footer {
+      background: #f0f0f0;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; 
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .address {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      height: auto; 
+      background-color: transparent;
+    }
+    
+    .amii {
+      width: 100%;
+      max-width: 108px;
+      height: auto; 
+      background-color: transparent;
+    }
+
+  
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+    
+      main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      
+      .profile-info h2, 
+      .profile-info h3 {
+        text-align: center;
+      }
+      
+      .section p {
+        text-align: left;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Blaskovits Group</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../members.html">Members</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../join.html">Join</a>
+      <a href="https://github.com/blaskovits-lab/">Github</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile-photo">
+      <img src="../pics/archit.jpg" alt="Archit Gupta" />
+    </div>
+
+    <div class="profile-info">
+      <h2>Archit Gupta</h2>
+      <h3>Undergraduate Student</h3>
+
+      <div class="section">
+        <h4>Biography</h4>
+        <p>Archit is a 4th year undergraduate physics student at the University of Alberta. He is passionate about using different machine learning tools in solving real life problems. He previously has researched with Dr. Mauricio Sacchi in the field of Denoising Neural Networks for seismic data. In his free time, he loves to read, travel, play football(⚽️) and watch movies. He is currently researching on Machine learning models which can be used in generating molecules which emit circularly polarized light.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="address">
+      Department of Chemistry<br />
+      University of Alberta<br />
+      W4-70B Chemistry Centre - West<br />
+      11227 Saskatchewan Drive<br />
+      Edmonton, Alberta, Canada T6G 2G2<br />
+    </div>
+
+    <img class="amii" src="../pics/amii.png" alt="Amii Logo" />
+    <img class="logo" src="../pics/UOA-300x70.png" alt="University of Alberta Logo" />
+  </footer>
+
+</body>
+</html>

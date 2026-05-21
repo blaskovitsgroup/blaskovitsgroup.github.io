@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blaskovits Group – Members</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensures footer stays at bottom even if content is short */
+    }
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap; 
+      gap: 15px; 
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    .section-title {
+      text-align: center;
+      margin: 60px 20px 40px 20px;
+      font-weight: 500;
+    }
+
+  
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px; 
+      flex-grow: 1; 
+    }
+
+    
+    .member-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .member-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+    .member-link:hover .member-card {
+      border-color: #cbd5e0;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .member-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      filter: grayscale(10%);
+    }
+
+    .info {
+      padding: 24px;
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .info h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.25rem;
+      color: #2d3748;
+    }
+
+    .info p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .view-profile {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #3182ce;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+
+    footer {
+      background: #f0f0f0;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; 
+      gap: 20px;
+      margin-top: 80px; 
+    }
+
+    .address {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      height: auto; 
+      background-color: transparent;
+    }
+    
+    .amii {
+      width: 100%;
+      max-width: 108px;
+      height: auto; 
+      background-color: transparent;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr; 
+        max-width: 400px; 
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>Blaskovits Group</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="members.html">Members</a>
+      <a href="publications.html">Publications</a>
+      <a href="join.html">Join</a>
+      <a href="https://github.com/blaskovits-lab/">Github</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">Meet the Blaskovits Group!</h2>
+
+  <main class="team-grid">
+    <a href="profiles/terry.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/terry.jpg" alt="Dr. Jacob Blaskovits">
+        <div class="info">
+          <h3>Dr. Jacob Blaskovits</h3>
+          <p>Principal Investigator</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/harold.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/harold.jpeg" alt="Harold Mena">
+        <div class="info">
+          <h3>Harold Mena</h3>
+          <p>PhD Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/juandiego.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/juandiego.jpg" alt="Juan Diego Castro Miyashiro">
+        <div class="info">
+          <h3>Juan Diego Castro Miyashiro</h3>
+          <p>Master's Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/ian.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/ian.jpg" alt="Ian LeBlanc">
+        <div class="info">
+          <h3>Ian LeBlanc</h3>
+          <p>Master's Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/yasna.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/yasna.jpg" alt="Yasna Naseri">
+        <div class="info">
+          <h3>Yasna Naseri</h3>
+          <p>Undergraduate Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/alex.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/alex.jpg" alt="Alex Cross">
+        <div class="info">
+          <h3>Alex Cross</h3>
+          <p>Undergraduate Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/archit.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/archit2.jpg" alt="Archit Gupta">
+        <div class="info">
+          <h3>Archit Gupta</h3>
+          <p>Undergraduate Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+    
+    <a href="profiles/anna.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/anna.jpg" alt="Anna Kozlova">
+        <div class="info">
+          <h3>Anna Kozlova</h3>
+          <p>Undergraduate Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="profiles/lavanya.html" class="member-link">
+      <div class="member-card">
+        <img src="pics/lavanya.jpg" alt="Lavanya Sankara Narayanan">
+        <div class="info">
+          <h3>Lavanya Sankara Narayanan</h3>
+          <p>Undergraduate Student</p>
+          <span class="view-profile">View Profile &rarr;</span>
+        </div>
+      </div>
+    </a>
+  </main>
+
+  <h2 class="section-title">Previous Members:</h2>
+  <footer>
+    <div class="address">
+      Department of Chemistry<br />
+      University of Alberta<br />
+      W4-70B Chemistry Centre - West<br />
+      11227 Saskatchewan Drive<br />
+      Edmonton, Alberta, Canada T6G 2G2<br />
+    </div>
+
+    <img class="amii" src="pics/amii.png" alt="Amii Logo" />
+    <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+  </footer>
+
+</body>
+</html>
