@@ -56,6 +56,58 @@
       text-align: center;
     }
 
+    /* Side-by-side container for the top two images */
+    .top-photos-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    .top-photo-item {
+      flex: 1;
+      width: 100%;
+      aspect-ratio: 486 / 509; 
+      background: #ccc;
+      overflow: hidden;
+    }
+
+    .top-photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* UPDATED: Enhanced text styling for a much cleaner, premium layout */
+    .intro-text {
+      max-width: 800px;
+      margin: 40px auto 30px auto;
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #333;
+      letter-spacing: -0.01em;
+    }
+
+    .intro-text .highlight {
+      color: #004080;
+      font-weight: 500;
+    }
+
+    /* Styled to have the exact same width constraints as the group photo */
+    .middle-photo {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      margin: 0 auto 20px auto;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
     .group-photo {
       width: 100%;
       max-width: 800px;
@@ -92,37 +144,99 @@
       color: #444;
     }
 
-    /* Footer */
+    /* Footer Wrapper for Full-Width Background */
     footer {
       background: #f0f0f0;
       padding: 30px 40px;
-      display: flex;
-      justify-content: space-between;
+      margin-top: 60px;
+    }
+
+    /* FIXED: Using CSS grid instead of Flexbox to tightly enforce three columns across wide spaces */
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      flex-wrap: wrap; 
       gap: 20px;
+    }
+
+    /* FIXED: Territorial acknowledgement spans the full layout width at the top */
+    .acknowledgement {
+      grid-column: 1 / -1;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: left;
     }
 
     .address {
       font-size: 0.95rem;
       line-height: 1.4;
+      text-align: left;
+    }
+
+    /* FIXED: Middle cluster item stays perfectly centered on the row */
+    .footer-amii-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; 
+      flex-wrap: nowrap;
+    }
+
+    /* FIXED: Right column matches layout dimensions and positions elements flush right */
+    .footer-logo-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     .logo {
       width: 100%;
-      max-width: 300px;
+      max-width: 280px;
       height: auto; 
       background-color: transparent;
     }
     
     .amii {
       width: 100%;
-      max-width: 108px;
+      max-width: 100px;
       height: auto; 
       background-color: transparent;
+      flex-shrink: 0;
+    }
+
+    .footer-side-pic {
+      width: 100%;
+      max-width: 130px;
+      height: auto;
+      background-color: transparent;
+      flex-shrink: 0;
     }
 
     /* --- MOBILE RESPONSIVENESS --- */
+    @media (max-width: 900px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .acknowledgement {
+        text-align: center;
+      }
+
+      .address {
+        text-align: center;
+      }
+
+      .footer-logo-container {
+        justify-content: center;
+      }
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -134,14 +248,36 @@
         justify-content: center;
       }
 
+      .top-photos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .top-photo-item {
+        width: 100%;
+        max-width: 400px; 
+      }
+
+      .intro-text {
+        text-align: left;
+        font-size: 1.05rem;
+        margin: 30px auto 20px auto;
+      }
+
+      .middle-photo {
+        height: 250px;
+      }
+
       .group-photo {
         height: 250px; 
       }
 
       footer {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
+      }
+
+      .footer-amii-group {
+        gap: 15px;
       }
     }
   </style>
@@ -160,32 +296,55 @@
   </header>
 
   <main>
+    <div class="top-photos-container">
+      <div class="top-photo-item">
+        <img src="pics/mol1.gif" alt="Lab Activity 1" />
+      </div>
+      <div class="top-photo-item">
+        <img src="pics/mol2.gif" alt="Lab Activity 2" />
+      </div>
+    </div>
+
+    <p class="intro-text">
+      Welcome! We are an interdisciplinary research group at the interface of artificial intelligence, quantum chemistry and computational materials. We are a diverse and international team of chemists, physicists, computing scientists and mathematicians located at the <a href="https://www.ualberta.ca/en/chemistry/index.html" target="_blank">University of Alberta Department of Chemistry</a> and the <a href="https://www.amii.ca/" target="_blank">Alberta Machine Intelligence Institute</a>. Our aim is to discover molecules for energy, optics and catalysis - addressing global challenges at molecular scale.
+    </p>
+
+    <div class="middle-photo">
+      <img src="pics/group_map.png" style="width:100%; height:100%; object-fit:cover;" alt="Featured Lab Image" />
+    </div>
+
     <div class="group-photo">
       <img src="pics/group.jpeg" style="width:100%; height:100%; object-fit:cover;" alt="Blaskovits Group Members" />
     </div>
 
-    <section class="news">
-      <h2>News</h2>
-
-      <div class="news-item">
-        <div class="news-date"></div>
-        <div></div>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <div class="address">
-      Department of Chemistry<br />
-      University of Alberta<br />
-      W4-70B Chemistry Centre - West<br />
-      11227 Saskatchewan Drive<br />
-      Edmonton, Alberta, Canada T6G 2G2<br />
-    </div>
+    <div class="footer-content">
+      <div class="acknowledgement">
+        <strong>Territorial Acknowledgement:</strong><br />
+        The University of Alberta, its buildings, labs, and research stations are primarily located on the traditional territory of Cree, Blackfoot, Métis, Nakota Sioux, Iroquois, Dene, and Ojibway/Saulteaux/Anishinaabe nations; lands that are now known as part of Treaties 6, 7, and 8 and homeland of the Métis. The University of Alberta respects the sovereignty, lands, histories, languages, knowledge systems, and cultures of First Nations, Métis and Inuit nations.
+      </div>
 
-    <img class="amii" src="pics/amii.png" alt="Amii Logo" />
-    
-    <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+      <div class="address">
+        Department of Chemistry<br />
+        University of Alberta<br />
+        W4-70B Chemistry Centre - West<br />
+        11227 Saskatchewan Drive<br />
+        amiskwaciwâskahikan / Edmonton, Alberta, Canada T6G 2G2<br />
+      </div>
+
+      <div class="footer-amii-group">
+        <img class="footer-side-pic" src="pics/CIFAR.png" alt="Footer Left Decoration" />
+        <img class="amii" src="pics/amii.png" alt="Amii Logo" />
+        <img class="footer-side-pic" src="pics/NSERC.png" alt="Footer Right Decoration" />
+      </div>
+      
+      <!-- FIXED: Wrapped in a container with defined alignment properties to ensure it remains flush with the right margin -->
+      <div class="footer-logo-container">
+        <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+      </div>
+    </div>
   </footer>
 
 </body>

@@ -18,7 +18,6 @@
       min-height: 100vh;
     }
 
-  
     header {
       display: flex;
       justify-content: space-between;
@@ -51,7 +50,6 @@
       text-decoration: underline;
     }
 
-   
     main {
       flex-grow: 1; 
       max-width: 1000px;
@@ -78,7 +76,6 @@
       margin-bottom: 40px; 
     }
 
- 
     .social-icons {
       display: flex;
       gap: 20px;
@@ -96,38 +93,85 @@
       color: #00264d;
     }
 
-   
+    /* Footer Wrapper for Full-Width Background */
     footer {
       background: #f0f0f0;
       padding: 30px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap; 
-      gap: 20px;
       margin-top: 60px;
+    }
+
+    /* FIXED: Using CSS Grid instead of Flexbox to tightly enforce three columns across wide spaces */
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 20px;
     }
 
     .address {
       font-size: 0.95rem;
       line-height: 1.4;
+      text-align: left;
+    }
+
+    /* FIXED: Middle cluster item stays perfectly centered on the row */
+    .footer-amii-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; 
+      flex-wrap: nowrap; 
+    }
+
+    /* FIXED: Right column positions elements flush right to prevent layout dropping */
+    .footer-logo-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     .logo {
       width: 100%;
-      max-width: 300px;
+      max-width: 280px;
       height: auto; 
       background-color: transparent;
     }
     
     .amii {
       width: 100%;
-      max-width: 108px;
+      max-width: 100px;
       height: auto; 
       background-color: transparent;
+      flex-shrink: 0;
     }
 
-  
+    .footer-side-pic {
+      width: 100%;
+      max-width: 130px;
+      height: auto;
+      background-color: transparent;
+      flex-shrink: 0;
+    }
+
+    /* --- MOBILE RESPONSIVENESS --- */
+    @media (max-width: 900px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .address {
+        text-align: center;
+      }
+
+      .footer-logo-container {
+        justify-content: center;
+      }
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -149,9 +193,11 @@
       }
 
       footer {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
+      }
+
+      .footer-amii-group {
+        gap: 15px;
       }
     }
   </style>
@@ -172,9 +218,16 @@
 
   <main>
     <div class="section">
-      <h4>Joining the Blaskovits Group</h4>
-      <p>We are looking for motivated students to join our group. Students with a background in chemistry, physics, and computational science are encouraged to apply. Please send a copy of your resume and a brief letter describing your interest in the application of machine learning to computational chemistry.</p>
-      
+      <h4>Graduate students</h4>
+      <p>We welcome applicants with backgrounds in any related discipline - chemistry, ML/AI, physics, mathematics, etc. Applicants must contact Dr. Blaskovits by email by December of the year prior to admission, including a CV, unofficial transcript (converted to 4.0 GPA system) and motivation statement outlining previous research experience and areas in which contribution to the group is envisioned. Admission to the chemistry graduate program is made by the department and not by an individual supervisor. Please consult <a href="https://www.ualberta.ca/en/graduate-programs/chemistry.html" target="_blank">this page</a> for admission guidelines and application deadlines. Graduate degrees in the chemistry department are fully funded. However, applicants are strongly encouraged to apply for independent research fellowships.</p>
+
+      <h4>Undergraduate students</h4>
+      <p>Applicants must contact Dr. Blaskovits by email, including a CV, unofficial transcript (converted to 4.0 GPA system) and motivation statement outlining any previous research experience and areas in which contribution to the group is envisioned. Domestic undergraduates doing summer research will be expected to apply for <a href="https://www.ualberta.ca/en/chemistry/undergraduate-program/summer-employment-opportunities/nserc.html" target="_blank">NSERC USRA funding or related</a>. International students must propose in this email which funding/mobility scheme will be targeted.  Internal students are encouraged to pursue credited research in the group through the <a href="https://www.ualberta.ca/en/chemistry/undergraduate-program/courses/advanced-research.html" target="_blank">Advanced Research Courses in Chemistry</a>.</p>
+   
+      <h4>Postdoctoral fellows</h4>
+      <p>We welcome applicants with PhDs in chemistry, ML/AI, physics, mathematics or a related discipline. Applicants must contact Dr. Blaskovits by email, including a CV with full publication list, motivation statement outlining PhD research experience, and a proposal of project ideas and funding scheme to be targeted. Candidates are strongly advised to consult the <a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program" target="_blank">Canada Postdoctoral Research Award program</a> and related programs for eligibility and deadlines.  
+Applications not meeting these requirements will not be considered. Short-listed candidates will be invited for an online or in-person interview.</p>
+   
       <h4>Contact</h4>
       <p>Please send all inquiries to <a href="mailto:jtblaskovits@ualberta.ca">jtblaskovits@ualberta.ca</a>.</p>
     </div>
@@ -186,16 +239,27 @@
   </main>
 
   <footer>
-    <div class="address">
-      Department of Chemistry<br />
-      University of Alberta<br />
-      W4-70B Chemistry Centre - West<br />
-      11227 Saskatchewan Drive<br />
-      Edmonton, Alberta, Canada T6G 2G2<br />
-    </div>
+    <!-- FIXED: Added standard inner centered layout wrapper to prevent stretching -->
+    <div class="footer-content">
+      <div class="address">
+        Department of Chemistry<br />
+        University of Alberta<br />
+        W4-70B Chemistry Centre - West<br />
+        11227 Saskatchewan Drive<br />
+        amiskwaciwâskahikan / Edmonton, Alberta, Canada T6G 2G2<br />
+      </div>
 
-    <img class="amii" src="pics/amii.png" alt="Amii Logo" />
-    <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+      <div class="footer-amii-group">
+        <img class="footer-side-pic" src="pics/CIFAR.png" alt="Footer Left Decoration" />
+        <img class="amii" src="pics/amii.png" alt="Amii Logo" />
+        <img class="footer-side-pic" src="pics/NSERC.png" alt="Footer Right Decoration" />
+      </div>
+      
+      <!-- FIXED: Wrapped logo in row-aligned container to keep it flush right -->
+      <div class="footer-logo-container">
+        <img class="logo" src="pics/UOA-300x70.png" alt="University of Alberta Logo" />
+      </div>
+    </div>
   </footer>
 
 </body>
