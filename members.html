@@ -59,14 +59,21 @@
     }
 
   
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 40px;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px; 
-      flex-grow: 1; 
+      padding: 0 20px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     
@@ -252,7 +259,8 @@
 
   <h2 class="section-title">Meet the Blaskovits Group!</h2>
 
-  <main class="team-grid">
+  <main>
+    <div class="team-grid">
     <a href="profiles/terry.html" class="member-link">
       <div class="member-card">
         <img src="pics/terry.jpg" alt="Dr. Jacob Blaskovits">
@@ -363,8 +371,12 @@
         </div>
       </div>
     </a>
+    </div>
 
-      <a href="profiles/anna.html" class="member-link">
+    <h2 class="section-title">Previous Members:</h2>
+
+    <div class="team-grid">
+    <a href="profiles/anna.html" class="member-link">
       <div class="member-card">
         <img src="pics/anna.jpg" alt="Anna Kozlova">
         <div class="info">
@@ -374,10 +386,9 @@
         </div>
       </div>
     </a>
+    </div>
 
   </main>
-
-  <h2 class="section-title">Previous Members:</h2>
 
   
   <footer>
